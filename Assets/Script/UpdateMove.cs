@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpdateMove : MonoBehaviour
-{
+public class UpdateMove : MonoBehaviour {
 
-    void Update()
-    {
+    public float speed = 0.5f;
 
+    void Update() {
+
+        this.transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
     }
 }

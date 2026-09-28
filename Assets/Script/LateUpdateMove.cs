@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LateUpdateMove : MonoBehaviour
-{
-    void LateUpdate()
-    {
+public class LateUpdateMove : MonoBehaviour {
 
+    public float speed = 0.5f;
+
+    void LateUpdate() {
+
+        this.transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
     }
 }
