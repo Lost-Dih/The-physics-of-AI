@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 5509298948941365025}
   - component: {fileID: 2624633046652468715}
   - component: {fileID: 8094725440516581626}
-  - component: {fileID: -2710545031201528297}
+  - component: {fileID: -8925291118219386259}
+  - component: {fileID: 8451916745996565665}
+  - component: {fileID: 5361368907796912607}
+  - component: {fileID: 994812606606469796}
   m_Layer: 0
   m_Name: Shell2
   m_TagString: Untagged
@@ -104,7 +107,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f08f169efadb840ba9564119be2641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveShell
---- !u!54 &-2710545031201528297
+--- !u!136 &-8925291118219386259
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868562557803292715}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Height: 0.65
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.000000007450581, z: 0.14}
+--- !u!114 &8451916745996565665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868562557803292715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a460c8290e014c3caa73ba461ac9a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shell
+  explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}
+  speed: 3
+--- !u!114 &5361368907796912607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868562557803292715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacaa7a7568b94e06b8e07095cfb1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyShell
+--- !u!54 &994812606606469796
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
