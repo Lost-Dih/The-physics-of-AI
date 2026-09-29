@@ -34,7 +34,7 @@ public class Drive : MonoBehaviour
         }else if(Input.GetKey(KeyCode.G))
         {
             transGun.RotateAround(transGun.position, transGun.right,2);
-        }else if(Input.GetKey(KeyCode.B))
+        }else if(Input.GetKeyDown(KeyCode.B))
         {
             Instantiate(bullet, gun.position, gun.rotation);
         }

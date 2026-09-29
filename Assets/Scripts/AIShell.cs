@@ -9,8 +9,8 @@ public class AIShell : MonoBehaviour {
 
     void OnCollisionEnter(Collision col) {
 
-        if (col.gameObject.tag == "tank") {
-            Debug.Log("Hit tank");
+        if (col.gameObject.tag == "tank") 
+        {
             GameObject exp = Instantiate(explosion, this.transform.position, Quaternion.identity);
             Destroy(exp, 0.5f);
             Destroy(this.gameObject);
@@ -19,12 +19,11 @@ public class AIShell : MonoBehaviour {
 
     void Start() {
 
-        rb = GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody>();
     }
 
-    void Update() {
-
-
+    void Update() 
+    {
         this.transform.forward = rb.linearVelocity;
     }
 }
